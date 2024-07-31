@@ -3,7 +3,7 @@
     "name": "Distraction free YouTube",
     "description": "asdf",
     "version": "1.0",
-    "permissions": ["activeTab", "scripting"],
+    "permissions": ["activeTab", "scripting", "tabs"],
     "icons": {
         "16": "images/icon-16.png",
         "32": "images/icon-32.png",
