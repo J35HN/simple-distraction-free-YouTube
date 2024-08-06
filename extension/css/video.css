@@ -1,0 +1,9 @@
+body > ytd-app > #content > #page-manager > ytd-watch-flexy >
+#columns > #primary > #primary-inner > #below > #comments {
+    display: none;
+}
+
+body > ytd-app > #content > #page-manager > ytd-watch-flexy >
+#columns > #secondary > #secondary-inner {
+    display: none;
+}

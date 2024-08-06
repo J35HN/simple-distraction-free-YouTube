@@ -4,6 +4,15 @@
     "description": "asdf",
     "version": "1.0",
     "permissions": ["activeTab", "scripting", "tabs"],
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "host_permissions": [
+        "https://www.youtube.com/*"
+    ],
     "icons": {
         "16": "images/icon-16.png",
         "32": "images/icon-32.png",
