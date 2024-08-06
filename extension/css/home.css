@@ -1,0 +1,4 @@
+body > ytd-app > #content > #page-manager > ytd-browse >
+ytd-two-column-browse-results-renderer {
+    display: none;
+}
