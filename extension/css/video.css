@@ -7,3 +7,8 @@ body > ytd-app > #content > #page-manager > ytd-watch-flexy >
 #columns > #secondary > #secondary-inner {
     display: none;
 }
+
+body > ytd-app > #content > #page-manager > ytd-watch-flexy {
+    --ytd-watch-flexy-sidebar-min-width: 0px;
+    --ytd-watch-flexy-sidebar-width: 0px;
+}
