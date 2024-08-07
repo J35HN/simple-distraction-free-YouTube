@@ -1,4 +1,31 @@
+body > ytd-app {
+    align-items: center;
+}
+
 body > ytd-app > #content > #page-manager > ytd-browse >
 ytd-two-column-browse-results-renderer {
+    display: none;
+}
+
+body > ytd-app > #content > tp-yt-app-drawer {
+    display: none;
+}
+
+body > ytd-app > #content > ytd-mini-guide-renderer {
+    display: none;
+}
+
+body > ytd-app > #content > ytd-page-manager > ytd-search >
+#container >#header {
+    display: none;
+}
+
+body > ytd-app > #content > #masthead-container > ytd-masthead >
+#container > #start {
+    display: none;
+}
+
+body > ytd-app > #content > #masthead-container > ytd-masthead >
+#container > #center > #voice-search-button {
     display: none;
 }
