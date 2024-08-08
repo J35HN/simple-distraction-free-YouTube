@@ -2,13 +2,13 @@
 _Super simple Extension for a distraction-free experience on YouTube_
 
 ## Installation
-Download the ZIP file. Extract the extension folder (``simple-distraction-free-YouTube/extension``) to any desired location.
+**Download the ZIP file**. Extract the extension folder (``simple-distraction-free-YouTube/extension``) to any desired location.
 
-Go to your Manage Extensions page. On a new tab, search chrome://extensions (chrome browser) or edge://extensions (edge browser).
+**Go to your Manage Extensions page**. On a new tab, search chrome://extensions (chrome browser) or edge://extensions (edge browser).
 
-Enable Developer Mode (in case it is not enabled).
+**Enable Developer Mode** (in case it is not enabled).
 
-Click the Unload unpacked button, and select the directory of the downloaded extension folder.
+**Click the Unload unpacked button, and select the directory of the downloaded extension folder**.
 
 ## Usage
 Just click the Extension to turn ‘ON’ or ‘OFF’.
