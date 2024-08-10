@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Distraction free YouTube",
-    "description": "asdf",
+    "description": "Super simple Extension for a distraction-free experience on YouTube",
     "version": "1.0",
     "permissions": ["activeTab", "scripting", "tabs"],
     "content_scripts": [
