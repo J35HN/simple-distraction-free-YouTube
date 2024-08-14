@@ -17,3 +17,11 @@ body > ytd-app > #content > ytd-page-manager > ytd-watch-flexy >
 #columns > #primary > #primary-inner > #below > #related {
     display: none;
 }
+
+body > ytd-app {
+    background-color: #000000;
+}
+
+body > ytd-app > #content > #masthead-container > ytd-masthead > #container {
+    background-color: #000000;
+}
