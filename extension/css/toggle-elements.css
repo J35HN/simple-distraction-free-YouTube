@@ -1,0 +1,4 @@
+/* Shorts */
+html[data-hide-shorts] ytd-rich-shelf-renderer[is-shorts] {
+  display: none !important;
+}
