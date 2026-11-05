@@ -6,7 +6,8 @@ html[data-hide-shorts]
     ytd-mini-guide-entry-renderer:has([title="Shorts"]),
     grid-shelf-view-model,
     ytd-video-renderer:has([overlay-style="SHORTS"]),
-    grid-shelf-view-model:has(ytm-shorts-lockup-view-model-v2)
+    grid-shelf-view-model:has(ytm-shorts-lockup-view-model-v2),
+    ytd-search-filter-renderer:has([title="Search for Shorts"])
   ) {
   display: none !important;
 }
