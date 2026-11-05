@@ -16,3 +16,8 @@ html[data-hide-shorts]
 html[data-hide-people-searched] :is(ytd-shelf-renderer) {
   display: none !important;
 }
+
+/* Chips / Homepage & Search */
+html[data-hide-chips] :is(#chips-wrapper, #chip-bar) {
+  display: none !important;
+}
