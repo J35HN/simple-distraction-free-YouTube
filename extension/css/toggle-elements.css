@@ -1,4 +1,16 @@
 /* Shorts */
-html[data-hide-shorts] ytd-rich-shelf-renderer[is-shorts] {
+html[data-hide-shorts]
+  :is(
+    ytd-rich-shelf-renderer[is-shorts],
+    ytd-guide-entry-renderer:has([title="Shorts"]),
+    ytd-mini-guide-entry-renderer:has([title="Shorts"]),
+    grid-shelf-view-model,
+    ytd-video-renderer:has([overlay-style="SHORTS"]),
+    grid-shelf-view-model:has(ytm-shorts-lockup-view-model-v2)
+  ) {
   display: none !important;
 }
+
+/* html[data-hide-shorts] ytd-guide-entry-renderer:has([title="Shorts"]) {
+  display: none !important;
+} */
