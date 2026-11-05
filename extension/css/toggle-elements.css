@@ -11,6 +11,7 @@ html[data-hide-shorts]
   display: none !important;
 }
 
-/* html[data-hide-shorts] ytd-guide-entry-renderer:has([title="Shorts"]) {
+/* People also searched for */
+html[data-hide-people-searched] :is(ytd-shelf-renderer) {
   display: none !important;
-} */
+}
