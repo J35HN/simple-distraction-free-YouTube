@@ -13,7 +13,8 @@ html[data-hide-shorts]
 }
 
 /* People also searched for */
-html[data-hide-people-searched] :is(ytd-shelf-renderer) {
+html[data-hide-people-searched]
+  :is(ytd-shelf-renderer:has([is-search-vod-shelf])) {
   display: none !important;
 }
 
