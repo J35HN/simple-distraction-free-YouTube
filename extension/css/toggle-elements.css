@@ -26,7 +26,10 @@ html[data-hide-chips] :is(#chips-wrapper, #chip-bar) {
 html[data-hide-sponsors]
   :is(
     ytd-rich-item-renderer:has(ytd-ad-slot-renderer),
-    ytd-item-section-renderer:has(ytd-ad-slot-renderer)
+    ytd-search-pyv-renderer:has(ytd-ad-slot-renderer),
+    ytd-ad-slot-renderer,
+    ytd-engagement-panel-section-list-renderer[target-id="engagement-panel-ads"],
+    #player-ads
   ) {
   display: none !important;
 }
