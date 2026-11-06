@@ -3,11 +3,13 @@
   "name": "Distraction free YouTube",
   "description": "Super simple Extension for a distraction-free experience on YouTube",
   "version": "1.0",
-  "permissions": ["activeTab", "scripting", "tabs"],
+  "permissions": ["activeTab", "scripting", "tabs", "storage"],
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],
-      "js": ["content.js"]
+      "js": ["content.js"],
+      "css": ["css/toggle-elements.css"],
+      "run_at": "document_start"
     }
   ],
   "host_permissions": ["https://www.youtube.com/*"],
