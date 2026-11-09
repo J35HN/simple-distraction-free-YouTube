@@ -40,3 +40,8 @@ html[data-hide-sponsors]
 html[data-hide-comments] :is(ytd-comments) {
   display: none !important;
 }
+
+/* Video actions */
+html[data-hide-video-actions] :is(#actions) {
+  display: none !important;
+}
