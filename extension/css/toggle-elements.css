@@ -7,7 +7,8 @@ html[data-hide-shorts]
     grid-shelf-view-model,
     ytd-video-renderer:has([overlay-style="SHORTS"]),
     grid-shelf-view-model:has(ytm-shorts-lockup-view-model-v2),
-    ytd-search-filter-renderer:has([title="Search for Shorts"])
+    ytd-search-filter-renderer:has([title="Search for Shorts"]),
+    ytd-item-section-renderer:has(ytd-reel-shelf-renderer)
   ) {
   display: none !important;
 }
