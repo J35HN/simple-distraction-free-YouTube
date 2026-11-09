@@ -65,3 +65,9 @@ html[data-hide-posts]
 html[data-hide-banner] :is(#page-header-banner) {
   display: none !important;
 }
+
+/* Channel main video */
+html[data-hide-main-video]
+  :is(ytd-item-section-renderer:has(ytd-channel-video-player-renderer)) {
+  display: none !important;
+}
