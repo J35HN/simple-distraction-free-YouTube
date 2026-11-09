@@ -60,3 +60,8 @@ html[data-hide-posts]
   ) {
   display: none !important;
 }
+
+/* Channel Banner */
+html[data-hide-banner] :is(#page-header-banner) {
+  display: none !important;
+}
