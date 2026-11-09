@@ -51,3 +51,12 @@ html[data-hide-video-actions] :is(#actions) {
 html[data-hide-secondary] :is(#secondary) {
   display: none !important;
 }
+
+/* Posts */
+html[data-hide-posts]
+  :is(
+    ytd-item-section-renderer:has(ytd-post-renderer),
+    yt-tab-shape[tab-title="Posts"]
+  ) {
+  display: none !important;
+}
