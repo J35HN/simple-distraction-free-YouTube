@@ -46,6 +46,20 @@ html[data-hide-comments] :is(ytd-comments) {
 html[data-hide-video-actions] :is(#actions) {
   display: none !important;
 }
+html[data-hide-like-dislike] :is(segmented-like-dislike-button-view-model) {
+  display: none !important;
+}
+html[data-hide-share] :is(yt-button-view-model:has([aria-label="Share"])) {
+  display: none !important;
+}
+html[data-hide-save]
+  :is(#flexible-item-buttons:has([aria-label="Save to playlist"])) {
+  display: none !important;
+}
+html[data-hide-more-actions]
+  :is(yt-button-shape:has([aria-label="More actions"])) {
+  display: none !important;
+}
 
 /* Video secondary column */
 html[data-hide-secondary] :is(#secondary) {
