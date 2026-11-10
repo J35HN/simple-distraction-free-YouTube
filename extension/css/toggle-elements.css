@@ -95,3 +95,8 @@ html[data-hide-video-data]
   ) {
   display: none !important;
 }
+
+/* Search Predictions */
+html[data-hide-search-predictions] :is(div[role="listbox"]) {
+  display: none !important;
+}
