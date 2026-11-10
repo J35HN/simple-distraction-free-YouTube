@@ -10,6 +10,7 @@ html[data-hide-shorts]
     ytd-search-filter-renderer:has([title="Search for Shorts"]),
     ytd-item-section-renderer:has(ytd-reel-shelf-renderer),
     yt-tab-shape[tab-title="Shorts"],
+    ytm-shorts-lockup-view-model-v2,
     .tabGroupShapeSlider.tabGroupShapeSliderTransition
   ) {
   display: none !important;
