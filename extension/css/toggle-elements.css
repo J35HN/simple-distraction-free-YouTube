@@ -9,7 +9,8 @@ html[data-hide-shorts]
     grid-shelf-view-model:has(ytm-shorts-lockup-view-model-v2),
     ytd-search-filter-renderer:has([title="Search for Shorts"]),
     ytd-item-section-renderer:has(ytd-reel-shelf-renderer),
-    yt-tab-shape[tab-title="Shorts"]
+    yt-tab-shape[tab-title="Shorts"],
+    .tabGroupShapeSlider.tabGroupShapeSliderTransition
   ) {
   display: none !important;
 }
@@ -70,7 +71,8 @@ html[data-hide-secondary] :is(#secondary) {
 html[data-hide-posts]
   :is(
     ytd-item-section-renderer:has(ytd-post-renderer),
-    yt-tab-shape[tab-title="Posts"]
+    yt-tab-shape[tab-title="Posts"],
+    .tabGroupShapeSlider.tabGroupShapeSliderTransition
   ) {
   display: none !important;
 }
