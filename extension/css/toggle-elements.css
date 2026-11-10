@@ -85,3 +85,13 @@ html[data-hide-main-video]
   :is(ytd-item-section-renderer:has(ytd-channel-video-player-renderer)) {
   display: none !important;
 }
+
+/* Video Data */
+html[data-hide-video-data]
+  :is(
+    span[dir][aria-label][role="text"],
+    .ytIconWrapperHost.ytContentMetadataViewModelLeadingIcon,
+    ytd-video-meta-block
+  ) {
+  display: none !important;
+}
