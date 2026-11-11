@@ -1,12 +1,12 @@
-const hideShortsBtn = document.querySelector("#hide-shorts");
+const container = document.querySelector(".container");
 
-hideShortsBtn.addEventListener("click", function (e) {
-  const btn = e.currentTarget;
-  chrome.storage.sync.set({ shorts: btn.checked }).then(() => {
-    console.log(`Value set to ${btn.checked}`);
-  });
+container.addEventListener("click", function (e) {
+  const input = e.target;
+  if (input.localName !== "input") return;
+  const key = input.getAttribute("id");
+  const value = input.checked;
 
-  chrome.storage.sync.get(["shorts"]).then((result) => {
-    console.log("Value currently is " + result.shorts);
+  chrome.storage.sync.set({ [key]: value }).then(() => {
+    console.log(`Key: ${key}, set with a value of ${value}`);
   });
 });
