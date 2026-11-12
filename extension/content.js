@@ -26,6 +26,18 @@ const applyAttributes = function (settings) {
   });
 };
 
+const onStorageChange = function (changes) {
+  // changedItems is just one change.
+  const changedItems = Object.keys(changes);
+  for (const item of changedItems) {
+    if (changes[item].newValue === true) {
+      htmlElement.setAttribute(`data-${item}`, "");
+    } else {
+      htmlElement.removeAttribute(`data-${item}`);
+    }
+  }
+};
+
 const getSettings = async function () {
   settings = await chrome.storage.sync.get(DEFAULTS);
   applyAttributes(settings);
@@ -36,3 +48,7 @@ const init = function () {
 };
 
 init();
+
+chrome.storage.onChanged.addListener((changes, namespace) => {
+  if (namespace === "sync") onStorageChange(changes);
+});
