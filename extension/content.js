@@ -14,7 +14,6 @@ const DEFAULTS = [
 ];
 
 const htmlElement = document.querySelector("html");
-htmlElement.setAttribute(`data-${DEFAULTS[0]}`, "");
 let settings;
 
 const applyAttributes = function (settings) {
@@ -22,7 +21,7 @@ const applyAttributes = function (settings) {
     if (settings[key]) {
       htmlElement.setAttribute(`data-${key}`, "");
     } else {
-      console.log("false");
+      htmlElement.removeAttribute(`data-${key}`);
     }
   });
 };
