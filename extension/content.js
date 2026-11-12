@@ -2,9 +2,10 @@ const DEFAULTS = [
   "hide-shorts",
   "hide-people-searched",
   "hide-chips",
+  "hide-sponsors",
   "hide-comments",
   "hide-video-actions",
-  "hide-secondary-column",
+  "hide-secondary",
   "hide-posts",
   "hide-banner",
   "hide-main-video",
@@ -12,11 +13,23 @@ const DEFAULTS = [
   "hide-search-predictions",
 ];
 
+const htmlElement = document.querySelector("html");
+htmlElement.setAttribute(`data-${DEFAULTS[0]}`, "");
 let settings;
+
+const applyAttributes = function (settings) {
+  DEFAULTS.forEach((key) => {
+    if (settings[key]) {
+      htmlElement.setAttribute(`data-${key}`, "");
+    } else {
+      console.log("false");
+    }
+  });
+};
 
 const getSettings = async function () {
   settings = await chrome.storage.sync.get(DEFAULTS);
-  console.log(settings);
+  applyAttributes(settings);
 };
 
 const init = function () {
