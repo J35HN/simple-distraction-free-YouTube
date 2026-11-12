@@ -31,7 +31,7 @@ const setAttribute = function (attribute, value) {
 };
 
 /**
- * Applies or removes an attribute of the HTML DOM element.
+ * Get the attribute that changed of sync storage, and sends the key and its value for DOM 'set' or 'remove'.
  *
  * @param {Object} changes - Object that describes the changes.
  */
