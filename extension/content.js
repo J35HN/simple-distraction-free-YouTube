@@ -17,18 +17,17 @@ const htmlElement = document.querySelector("html");
 let settings;
 
 /**
- * Applies the attributes on the HTML DOM element.
+ * Applies or removes the attribute into the HTML DOM element
  *
- * @param {Object} settings - Object that contains the keys of attributes.
+ * @param {string} attribute
+ * @param {boolean} value
  */
-const applyAttributes = function (settings) {
-  DEFAULTS.forEach((key) => {
-    if (settings[key]) {
-      htmlElement.setAttribute(`data-${key}`, "");
-    } else {
-      htmlElement.removeAttribute(`data-${key}`);
-    }
-  });
+const setAttribute = function (attribute, value) {
+  if (value) {
+    htmlElement.setAttribute(`data-${attribute}`, "");
+  } else {
+    htmlElement.removeAttribute(`data-${attribute}`);
+  }
 };
 
 /**
@@ -40,11 +39,7 @@ const onStorageChange = function (changes) {
   // changedItems is just one change.
   const changedItems = Object.keys(changes);
   for (const item of changedItems) {
-    if (changes[item].newValue === true) {
-      htmlElement.setAttribute(`data-${item}`, "");
-    } else {
-      htmlElement.removeAttribute(`data-${item}`);
-    }
+    setAttribute(item, changes[item].newValue);
   }
 };
 
@@ -52,13 +47,15 @@ const onStorageChange = function (changes) {
  * Gets the keys and values from sync storage of the chrome extension.
  *
  */
-const getSettings = async function () {
+const setSettings = async function () {
   settings = await chrome.storage.sync.get(DEFAULTS);
-  applyAttributes(settings);
+  DEFAULTS.forEach((key) => {
+    setAttribute(key, settings[key]);
+  });
 };
 
 const init = function () {
-  getSettings();
+  setSettings();
 };
 
 init();
